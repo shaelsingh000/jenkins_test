@@ -14,8 +14,9 @@ pipeline {
         }
         stage('Run') {
             steps {
-                sh 'docker run --rm -d -p 8081:81 nginx:alpine'
+                sh 'docker run --rm -d -p 8081:80 nginx:alpine'
             }
         }
     }
+
 }
